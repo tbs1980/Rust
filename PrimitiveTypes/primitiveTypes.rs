@@ -13,4 +13,19 @@ fn main()
 
     let b = 1.0; // y has type f64
 
+    // arrays
+    let a = [1, 2, 3]; // a: [i32; 3]
+    let mut m = [1, 2, 3]; // m: [i32; 3]
+
+    let a1 = [0; 20]; // a: [i32; 20]
+
+    println!("a1 has {} elements", a1.len());
+
+    let names = ["Graydon", "Brian", "Niko"]; // names: [&str; 3]
+
+    println!("The second name is: {}", names[1]);
+
+    //slices
+    let middle = &a1[1..4];
+
 }
