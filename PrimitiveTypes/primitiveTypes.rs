@@ -28,4 +28,16 @@ fn main()
     //slices
     let middle = &a1[1..4];
 
+    //tuples
+    let x1: (i32, &str) = (1, "hello");
+
+    let mut x2 = (1, 2);
+    let y2 = (2,3);
+
+    x2 = y2;
+
+    //Functions
+    fn foo(x: i32) -> i32 { x }
+    let x3: fn(i32) -> i32 = foo;
+
 }
